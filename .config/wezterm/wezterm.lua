@@ -112,7 +112,8 @@ local config = {
 	-- enable_wayland = false,
 	color_scheme = "nordfox",
 	color_scheme_dirs = { os.getenv("HOME") .. "/.config/wezterm/colors/" },
-	hide_tab_bar_if_only_one_tab = false,
+	hide_tab_bar_if_only_one_tab = true,
+	window_decorations = "TITLE | RESIZE",
 	adjust_window_size_when_changing_font_size = false,
 	selection_word_boundary = " \t\n{}[]()\"'`,;:│=&!%",
 	window_padding = {
