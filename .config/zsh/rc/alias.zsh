@@ -27,12 +27,13 @@ alias history-mem='fc -rl'
 alias history-import='fc -RI'
 
 # ls
-alias la='ls -aF --color=auto'
-alias lla='ls -alF --color=auto'
-alias lal='ls -alF --color=auto'
-alias ls='ls --color=auto'
-alias ll='ls -l --color=auto'
-alias l.='ls -d .[a-zA-Z]* --color=auto'
+alias dir='eza -la --icons=always --group-directories-first'
+alias la='eza -la --icons=always --group-directories-first'
+alias lla='eza -laF --icons=always --group-directories-first'
+alias lal='eza -alF --icons=always --group-directories-first'
+alias ls='eza -la --icons=always --group-directories-first'
+alias ll='eza -la --icons=always --group-directories-first'
+alias l.='eza -laf --icons=always --group-directories-first'
 
 # chmod
 alias 644='chmod 644'
