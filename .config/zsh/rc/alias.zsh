@@ -57,10 +57,10 @@ alias gd='dirs -v; echo -n "select number: "; read newdir; cd +"$newdir"' # AUTO
 # man
 alias man-ascii-color-code="man 4 console_codes"
 
-# tmux
-alias t='\tmux -2'
-alias tmux='\tmux -2'
-alias ta='\tmux -2 attach -d'
+# git
+alias commit="git commit -a --allow-empty-message"
+alias push="git push"
+alias pull="git pull"
 
 # xauth
 alias xauth-copy="xauth list | tail -n 1 | awk '{printf \$3}' | pbcopy"
@@ -125,35 +125,6 @@ alias -s {gz,tgz,zip,lzh,bz2,tbz,Z,tar,arj,xz}=extract
 ##          App                                               ##
 #==============================================================#
 
-# urxvt
-alias Xresources-reload="xrdb -remove && xrdb -DHOME_ENV=\"$HOME\" -merge ~/.config/X11/Xresources"
-
-# web-server
-alias web-server='python -m SimpleHTTPServer 8000'
-
-# generate password
-alias generate-passowrd='openssl rand -base64 20'
-
-# hdd mount
-alias mount-myself='sudo mount -o uid=$(id -u),gid=$(id -g)'
-
-# xhost
-alias xhost-local='xhost local:'
-
-# move bottom
-alias move-bottom='tput cup $(($(stty size|cut -d " " -f 1))) 0 && tput ed'
-
-# luajit patch https://github.com/LuaJIT/LuaJIT/issues/369
-alias luajit="rlwrap luajit"
-
-# translate
-alias transj='trans ja:'
-alias tj='trans ja:'
-alias te='trans :ja'
-
-if builtin command -v nerdctl > /dev/null 2>&1; then
-	alias docker='nerdctl'
-fi
 
 #==============================================================#
 ##          improvement command                               ##

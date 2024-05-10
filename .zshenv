@@ -14,7 +14,7 @@ export ZHOMEDIR=$HOME/.config/zsh
 export ZRCDIR=$ZHOMEDIR/rc
 export ZDATADIR=$XDG_DATA_HOME/zsh
 export ZCACHEDIR=$XDG_CACHE_HOME/zsh
-
+export VISUAL=nvim
 setopt no_global_rcs
 
 typeset -fuz zkbd
