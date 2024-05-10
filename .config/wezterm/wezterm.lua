@@ -79,8 +79,10 @@ local local_config = load_local_config("local")
 local config = {
 	-- font = wezterm.font("Cica"),
 	-- font_size = 10.0,
-	font = wezterm.font("UDEV Gothic 35NFLG"),
-	font_size = 8.5,
+	font = wezterm.font_with_fallback(
+		"Monoid Nerd Font Mono",
+		"CaskaydiaCove Nerd Font",),
+	font_size = 12,
 	-- cell_width = 1.1,
 	-- line_height = 1.1,
 	-- font_rules = {
@@ -111,8 +113,9 @@ local config = {
 	-- https://github.com/wez/wezterm/issues/5103
 	-- enable_wayland = false,
 	color_scheme = "nordfox",
+	window_decorations = "TITLE | RESIZE"
 	color_scheme_dirs = { os.getenv("HOME") .. "/.config/wezterm/colors/" },
-	hide_tab_bar_if_only_one_tab = false,
+	hide_tab_bar_if_only_one_tab = true,
 	adjust_window_size_when_changing_font_size = false,
 	selection_word_boundary = " \t\n{}[]()\"'`,;:│=&!%",
 	window_padding = {
