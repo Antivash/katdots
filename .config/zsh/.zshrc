@@ -75,3 +75,8 @@ if [ -n "$ZSHRC_CI_TEST" ]; then
 	echo "zshrc load complete"
 	exit
 fi
+#--------------------------------------------------------------#
+##          Powerline 10K                                     ##
+#--------------------------------------------------------------#
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
