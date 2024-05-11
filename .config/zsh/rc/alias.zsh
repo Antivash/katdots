@@ -22,6 +22,7 @@ alias makej='make -j$(nproc)'
 alias arch='uname -m'
 alias reload="source ~/.zshrc"
 alias zka="zellij kill-all-sessions"
+alias q="exit"
 
 # history
 alias history-mem='fc -rl'
