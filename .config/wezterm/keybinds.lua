@@ -30,7 +30,7 @@ M.mouse_bindings = {
 	{
 		event = { Up = { streak = 1, button = "Right" } },
 		mods = "NONE",
-		action = act({ CompleteSelection = "Clipboard" }),
+		action = act({ PasteFrom = 'Clipboard' }),
 	},
 	{
 		event = { Up = { streak = 1, button = "Left" } },
