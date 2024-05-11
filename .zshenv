@@ -117,8 +117,12 @@ roottext=lightgrey,black
 '
 
 #--------------------------------------------------------------#
+##                  Podman Stuff                              ##
+#--------------------------------------------------------------#
+export DOCKER_HOST='unix:///run/user/1000/podman/podman-machine-default-api.sock'
+
+#--------------------------------------------------------------#
 ##                  WSL GUI Stuff                             ##
 #--------------------------------------------------------------#
-
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
 export LIBGL_ALWAYS_INDIRECT=1
