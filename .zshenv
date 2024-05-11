@@ -17,6 +17,8 @@ export ZCACHEDIR=$XDG_CACHE_HOME/zsh
 export VISUAL=nvim
 setopt no_global_rcs
 
+unset ZSH_AUTOSUGGEST_USE_ASYNC
+
 typeset -fuz zkbd
 typeset -U path PATH manpath sudo_path
 typeset -xT SUDO_PATH sudo_path
