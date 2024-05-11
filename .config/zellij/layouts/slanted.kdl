@@ -30,7 +30,7 @@ layout {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
                 format_left  "[fg=#000000,bg=#9017a4,bold]{mode}#[fg=#000000,bg=#9017a4,bold]Tabs -->  #[fg=blue,bg=#000000]{tabs}"
                 format_right "#[fg=#000000,bg=#9017a4]{datetime}"
-                format_space "#[bg=#000000]"
+                format_space "#[bg=transparent]"
 
                 hide_frame_for_single_pane "true"
 
