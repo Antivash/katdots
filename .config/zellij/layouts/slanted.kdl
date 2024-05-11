@@ -28,7 +28,7 @@ layout {
     children
         pane size=1 borderless=true {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
-                format_left  "[fg=#000000,bg=#9017a4,bold]{mode}#[fg=#000000,bg=#9017a4,bold]Tabs -->  #[fg=blue,bg=#000000]{tabs}"
+                format_left  "[fg=#9017a4,bg=#000000,bold]{mode}#[fg=#ffffff,bg=#9017a4,bold]Tabs -->  #[fg=#9017a4,bg=#000000]{tabs}"
                 format_right "#[fg=#000000,bg=#9017a4]{datetime}"
                 format_space "#[bg=transparent]"
 
@@ -44,9 +44,9 @@ layout {
                 tab_active_sync         "#[fg=#9399B2,bg=#000000,bold,italic] {index} {name} <> "
 
 
-                datetime          "#[fg=#000000,bg=#9017a4,bold] {format} "
+                datetime          "#[fg=#ffffff,bg=#9017a4,bold] {format} "
                 datetime_format   "%A, %d %b %Y %H:%M"
-                datetime_timezone "Europe/Berlin"
+                datetime_timezone "America/Chicago"
         }
     }
 }
