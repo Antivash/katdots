@@ -1,12 +1,17 @@
 layout {
-    tab name="art" hide_floating_panes=true {
+    tab name="Art" hide_floating_panes=true {
     pane name="Forge"
     floating_panes { // will start hidden
-        pane width="33%" height="50%" x=0 y=0
-        pane width="33%" height="50%" x="33%" y=0
-        pane width="33%" height="50%" x="100%" y=0
+        pane name="Lama" width="33%" height="50%" x=0 y=0
+        pane name="Ofelia" width="33%" height="50%" x="33%" y=0
+        pane name="Index" width="33%" height="50%" x="100%" y=0
     }
-
+    tab name="Chat" hide_floating_panes=true {
+    pane name="Textui" split_direction="vertical"
+    pane name="SillyTavern"
+    floating_panes { // will start hidden
+        pane name="SillyTavern Extras" width="100%" height="50%" x=0 y=0
+    }
     }
     default_tab_template {
     children
