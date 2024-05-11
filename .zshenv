@@ -28,6 +28,7 @@ path=(
 	$HOME/go/bin(N-/)
 	$HOME/.go/bin(N-/)
 	$HOME/.cargo/bin(N-/)
+	$HOME/.config/bin(N-/)
 	$HOME/.rustup/toolchains/*/bin(N-/)
 	$HOME/.nimble/bin(N-/)
 	$HOME/.yarn/bin(N-/)
