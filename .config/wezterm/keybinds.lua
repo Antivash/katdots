@@ -23,9 +23,9 @@ M.key_tables = {
 
 M.mouse_bindings = {
 	{
-		event = { Up = { streak = 1, button = "Left" } },
-		mods = "NONE",
-		action = act({ CompleteSelection = "PrimarySelection" }),
+		event = { Up = { streak = 1, button = "Right" } },
+		mods = "ALT",
+		action = act({ CopyTo = 'ClipboardAndPrimarySelection' }),
 	},
 	{
 		event = { Up = { streak = 1, button = "Right" } },
