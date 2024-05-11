@@ -21,6 +21,7 @@ alias osc52='printf "\x1b]52;;%s\x1b\\" "$(base64 <<< "$(date +"%Y/%m/%d %H:%M:%
 alias makej='make -j$(nproc)'
 alias arch='uname -m'
 alias reload="source ~/.zshrc"
+alias zka="zellij kill-all-sessions"
 
 # history
 alias history-mem='fc -rl'
