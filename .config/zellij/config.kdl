@@ -102,9 +102,8 @@ keybinds clear-defaults=true {
 	}
 		shared_except "locked" {
 		bind "Alt g" { SwitchToMode "Locked"; }
-		bind "PageDown" "Alt Left" "Up" "k" { GoToPreviousTab; SwitchToMode "Normal"; }
+		bind "PageDown" "Alt Left"{ GoToPreviousTab; SwitchToMode "Normal"; }
 		bind "PageUp" "Alt Right" { GoToNextTab; SwitchToMode "Normal"; }
-		bind "Alt =" "Alt +" { Resize "Increase"; }
 		bind "F5" { ToggleFloatingPanes; SwitchToMode "Normal"; }
 		bind "F6" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
 		
