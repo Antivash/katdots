@@ -3,7 +3,7 @@ local utils = require("utils")
 local keybinds = require("keybinds")
 local scheme = wezterm.get_builtin_color_schemes()["nord"]
 local gpus = wezterm.gui.enumerate_gpus()
--- require("on")
+require("on")
 
 -- /etc/ssh/sshd_config
 -- AcceptEnv TERM_PROGRAM_VERSION COLORTERM TERM TERM_PROGRAM WEZTERM_REMOTE_PANE
