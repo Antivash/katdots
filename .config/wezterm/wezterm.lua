@@ -76,6 +76,7 @@ local local_config = load_local_config("local")
 ---------------------------------------------------------------
 --- Config
 ---------------------------------------------------------------
+local config.window_decorations = "TITLE | RESIZE"
 local config = {
 	-- font = wezterm.font("Cica"),
 	-- font_size = 10.0,
@@ -94,7 +95,7 @@ local config = {
 	-- 		font = wezterm.font("Cica", { weight = "Bold", italic = true }),
 	-- 	},
 	-- },
-	check_for_updates = false,
+	check_for_updates = true,
 	use_ime = true,
 	ime_preedit_rendering = "Builtin",
 	use_dead_keys = false,
@@ -112,8 +113,7 @@ local config = {
 	-- enable_wayland = false,
 	color_scheme = "nordfox",
 	color_scheme_dirs = { os.getenv("HOME") .. "/.config/wezterm/colors/" },
-	hide_tab_bar_if_only_one_tab = true,
-	window_decorations = "TITLE | RESIZE",
+	hide_tab_bar_if_only_one_tab = false,
 	adjust_window_size_when_changing_font_size = false,
 	selection_word_boundary = " \t\n{}[]()\"'`,;:│=&!%",
 	window_padding = {
@@ -135,7 +135,7 @@ local config = {
 		},
 	},
 	exit_behavior = "CloseOnCleanExit",
-	tab_bar_at_bottom = false,
+	tab_bar_at_bottom = true,
 	window_close_confirmation = "AlwaysPrompt",
 	-- window_background_opacity = 0.8,
 	disable_default_key_bindings = true,
