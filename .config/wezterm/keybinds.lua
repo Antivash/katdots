@@ -10,7 +10,7 @@ M.tmux_keybinds = {
 }
 
 M.default_keybinds = {
-	
+	{ key = 'V', mods = 'CTRL', action = act.PasteFrom 'Clipboard' },
 }
 
 function M.create_keybinds()
