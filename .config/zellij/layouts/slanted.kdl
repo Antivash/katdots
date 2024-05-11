@@ -36,12 +36,12 @@ layout {
 
                 mode_normal  "#[bg=#9017a4] "
 
-                tab_normal              "#[fg=transparent,bg=#4C4C59]#[fg=#000000,bg=#4C4C59] {index}  {name} #[fg=#4C4C59,bg=transparent]"
-                tab_normal_fullscreen   "#[fg=transparent,bg=#4C4C59]#[fg=#000000,bg=#4C4C59] {index} {name} [] "
-                tab_normal_sync         "#[fg=transparent,bg=#4C4C59]#[fg=#000000,bg=#4C4C59] {index} {name} <> "
-                tab_active              "#[bg=transparent,fg=#9017a4,bold,italic]#[fg=#ffffff,bg=#9017a4,bold,italic] {index}  {name} #[fg=#9017a4,bg=transparent]"
-                tab_active_fullscreen   "#[bg=transparent,fg=#9017a4,bold,italic]#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} [] "
-                tab_active_sync         "#[bg=transparent,fg=#9017a4,bold,italic]#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} <> "
+                tab_normal              "#[fg=#000000,bg=#4C4C59] {index}  {name} #[fg=#4C4C59,bg=transparent]"
+                tab_normal_fullscreen   "#[fg=#000000,bg=#4C4C59] {index} {name} [] "
+                tab_normal_sync         "#[fg=#000000,bg=#4C4C59] {index} {name} <> "
+                tab_active              "#[fg=#ffffff,bg=#9017a4,bold,italic] {index}  {name} #[fg=#9017a4,bg=transparent]"
+                tab_active_fullscreen   "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} [] "
+                tab_active_sync         "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} <> "
 
 
                 datetime          "#[fg=#ffffff,bg=#9017a4,bold] {format} "
