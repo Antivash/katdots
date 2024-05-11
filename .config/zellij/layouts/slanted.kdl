@@ -3,10 +3,10 @@ layout {
     pane name="Forge"
     floating_panes { // will start hidden
         pane {
-        width="30%"
-        height="50%"
-        x=0
-        y=0
+        width="30%";
+        height="50%";
+        x=0;
+        y=0;
         }
         pane
     }
