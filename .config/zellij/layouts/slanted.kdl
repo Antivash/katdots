@@ -8,7 +8,7 @@ layout {
     }
     }
     tab name="Chat" hide_floating_panes=true {
-    pane name="Textui" split_direction="vertical"
+    pane name="Textui" split_direction="horizontal"
     pane name="SillyTavern"
     floating_panes { // will start hidden
         pane name="SillyTavern Extras" width="100%" height="50%" x=0 y=0
