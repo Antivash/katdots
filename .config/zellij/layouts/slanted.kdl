@@ -7,8 +7,8 @@ layout {
         pane name="Index" width="33%" height="50%" x="100%" y=0
     }
     }
-    tab name="Chat" hide_floating_panes=true {
-    pane name="Textui" split_direction="horizontal"
+    tab name="Chat" hide_floating_panes=true split_direction="vertical" {
+    pane name="Textui" 
     pane name="SillyTavern"
     floating_panes { // will start hidden
         pane name="SillyTavern Extras" width="100%" height="50%" x=0 y=0
