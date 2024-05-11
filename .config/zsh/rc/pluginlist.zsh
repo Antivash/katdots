@@ -502,7 +502,7 @@ fi
 # local plugins
 #==============================================================#
 [ -f "$HOME/.zshrc.plugin.local" ] && source "$HOME/.zshrc.plugin.local"
-
+zinit light masonc15/wsl-notify-zsh
 
 #==============================================================#
 # old plugins

@@ -196,3 +196,9 @@ hash -d zshdata=$XDG_DATA_HOME/zsh
 hash -d zshplugins=$XDG_DATA_HOME/zsh/zinit/plugins
 hash -d nvimdata=$XDG_DATA_HOME/nvim
 hash -d nvimplugins=$XDG_DATA_HOME/nvim/lazy
+
+#==============================================================#
+##          	WSL                                           ##
+#==============================================================#
+alias win='cmd.exe /k "C:/tools/Cmder/vendor/init.bat"'
+alias powershell="pwsh.exe"
