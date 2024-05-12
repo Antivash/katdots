@@ -132,6 +132,7 @@ alias -s {gz,tgz,zip,lzh,bz2,tbz,Z,tar,arj,xz}=extract
 #==============================================================#
 
 alias extras="python server.py --enable-modules=chromadb,summarize,classify,sd"
+alias index="sudo podman -i exec photorism photoprism index"
 
 #==============================================================#
 ##          improvement command                               ##
