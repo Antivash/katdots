@@ -37,8 +37,8 @@ path=(
 	# ./node_modules/.bin(N-/) # don't work relative path. so this set automatically by chpwd
 	$HOME/.config/yarn/global/node_modules/.bin(N-/)
 	$HOME/.deno/bin(N-/)
-	/home/linuxbrew/.linuxbrew/bin
-	/home/anaconda/bin
+	/home/linuxbrew/.linuxbrew/bin(N-/)
+	/home/anaconda/bin(N-/)
 	$path
 )
 export PATH
