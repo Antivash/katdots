@@ -38,6 +38,7 @@ path=(
 	$HOME/.config/yarn/global/node_modules/.bin(N-/)
 	$HOME/.deno/bin(N-/)
 	/home/linuxbrew/.linuxbrew/bin
+	/home/anaconda/bin
 	$path
 )
 export PATH

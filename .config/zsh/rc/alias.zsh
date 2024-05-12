@@ -65,6 +65,7 @@ alias man-ascii-color-code="man 4 console_codes"
 alias commit="git commit -a --allow-empty-message"
 alias push="git push"
 alias pull="git pull"
+alias clone="git clone"
 
 # xauth
 alias xauth-copy="xauth list | tail -n 1 | awk '{printf \$3}' | pbcopy"
