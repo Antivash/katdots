@@ -122,7 +122,8 @@ roottext=lightgrey,black
 #--------------------------------------------------------------#
 ##                  Podman Stuff                              ##
 #--------------------------------------------------------------#
-export DOCKER_HOST='unix:///run/user/1000/podman/podman-machine-default-api.sock'
+#export DOCKER_HOST='unix:///run/user/1000/podman/podman-machine-default-api.sock'
+export DOCKER_HOST='$XDG_RUNTIME_DIR/podman/podman.sock'
 
 #--------------------------------------------------------------#
 ##                  WSL GUI Stuff                             ##
