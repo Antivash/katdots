@@ -131,6 +131,7 @@ alias -s {gz,tgz,zip,lzh,bz2,tbz,Z,tar,arj,xz}=extract
 ##          App                                               ##
 #==============================================================#
 
+alias extras="python server.py --enable-modules=chroma,summarize,classify,sd"
 
 #==============================================================#
 ##          improvement command                               ##
