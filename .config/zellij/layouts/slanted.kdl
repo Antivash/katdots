@@ -34,7 +34,7 @@ layout {
 
                 hide_frame_for_single_pane "true"
 
-                mode_normal  "#[fg=#9017a4,bg=transparent]░▒▓#[bg=#9017a4]N"
+                mode_normal  "#[fg=#9017a4,bg=transparent]░▒▓#[bg=#9017a4,fg=#FFFFFF]N"
                 mode_pane  "#[bg=#9017a4] "
                 mode_normal  "#[bg=#9017a4] "
 
