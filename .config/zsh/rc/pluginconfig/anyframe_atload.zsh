@@ -4,7 +4,7 @@ bindkey '^X^B' anyframe-widget-checkout-git-branch
 #bindkey '^Xr' anyframe-widget-execute-history
 bindkey '^X^R' anyframe-widget-execute-history
 #bindkey '^Xp' anyframe-widget-put-history
-bindkey '^X^P' anyframe-widget-put-history
+#bindkey '^X^P' anyframe-widget-put-history
 #bindkey '^Xg' anyframe-widget-cd-ghq-repository
 bindkey '^X^G' anyframe-widget-cd-ghq-repository
 #bindkey '^Xk' anyframe-widget-kill
