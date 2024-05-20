@@ -111,3 +111,4 @@ __pycache__
 !.linkignore
 !.gitignore
 !.gitkeep
+/.config/powerlevel10k
