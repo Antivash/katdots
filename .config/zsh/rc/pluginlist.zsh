@@ -449,7 +449,7 @@ zinit wait'1' lucid \
 	# 	for @mislav/hub
 
 # snippet
-[[ $- == *i* ]] && stty -ixon
+[[ $- == *i* ]] && stty -ixon <$TTY >$TTY
 zinit wait'1' lucid blockf nocompletions \
 	from"gh-r" as"program" pick"pet" bpick'*linux_amd64.tar.gz' \
 	atclone'chown -R $(id -nu):$(id -ng) .; zinit creinstall -q knqyf263/pet' \
