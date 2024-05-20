@@ -6,7 +6,7 @@
 
 stty intr '^C'        # Ctrl+C cancel
 stty susp '^Z'        # Ctrl+Z suspend
-stty stop undef
+stty stop undef <$TTY >$TTY
 
 # zsh key bindings (also determine if EDITOR=vi)
 bindkey -e    # emacs like
