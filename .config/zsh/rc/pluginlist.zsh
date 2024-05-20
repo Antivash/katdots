@@ -72,10 +72,10 @@ zinit wait'0a' lucid \
 	atload"source $ZHOMEDIR/rc/pluginconfig/fast-syntax-highlighting.zsh" \
 	light-mode for @zdharma-continuum/fast-syntax-highlighting
 
-PROMPT="%~"$'\n'"> "
-zinit wait'!0b' lucid depth=1 \
-	atload"source $ZHOMEDIR/rc/pluginconfig/powerlevel10k_atload.zsh" \
-	light-mode for @romkatv/powerlevel10k
+#PROMPT="%~"$'\n'"> "
+#zinit wait'!0b' lucid depth=1 \
+#	atload"source $ZHOMEDIR/rc/pluginconfig/powerlevel10k_atload.zsh" \
+#	light-mode for @romkatv/powerlevel10k
 
 
 #--------------------------------#
