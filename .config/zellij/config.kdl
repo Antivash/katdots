@@ -126,7 +126,10 @@ keybinds clear-defaults=true {
 	}
 	
 	shared_except "renametab" "locked" {
-		bind "F7" { SwitchToMode "RenameTab"; }
+		bind "F7" { SwitchToMode "RenamePane"; }
+	}
+	shared_except "renametab" "locked" {
+		bind "F8" { SwitchToMode "RenameTab"; }
 	}
 	shared_except "tmux" "locked" {
 		bind "Ctrl b" { SwitchToMode "Tmux"; }
