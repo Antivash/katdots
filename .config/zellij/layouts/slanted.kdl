@@ -35,12 +35,12 @@ layout {
                 hide_frame_for_single_pane "true"
 
                 mode_normal  "#[fg=#9017a4,bg=transparent]░▒▓#[bg=#9017a4,fg=#FFFFFF]"
-                mode_pane  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Pane  "
-                mode_tab  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Tab   "
+                mode_pane  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Pane 󱓊 "
+                mode_tab  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Tab  "
                 mode_resize  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Resize Pane   "
                 mode_renametab  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Rename Tab   "
-                mode_rename  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Rename Pane   "
-                mode_session  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Rename Tab   "
+                mode_rename  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Rename Pane  󱐪 "
+                mode_session  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Rename Tab  󱇝 "
 
                 tab_normal              "#[bg=transparent,fg=#4C4C59]░▒▓#[fg=#000000,bg=#4C4C59] {index}  {name} #[fg=#4C4C59,bg=transparent]▓▒░"
                 tab_normal_fullscreen   "#[fg=#000000,bg=#4C4C59] {index} {name} [] "
