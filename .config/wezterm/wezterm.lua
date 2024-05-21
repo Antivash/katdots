@@ -169,7 +169,7 @@ config.background = {
   -- This is the deepest/back-most layer. It will be rendered first
   {
     source = {
-      File = '/home/antivash/.config/wezterm/gallery/23.jpg',
+      File = '/home/antivash/.config/wezterm/gallery/23-blue.jpg',
     },
     -- The texture tiles vertically but not horizontally.
     -- When we repeat it, mirror it so that it appears "more seamless".

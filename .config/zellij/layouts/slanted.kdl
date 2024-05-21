@@ -28,29 +28,29 @@ layout {
     children
         pane size=1 borderless=true {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
-                format_left  "#[fg=#9017a4,bg=transparent,bold]{mode}#[fg=#ffffff,bg=#9017a4,bold]Tabs #[fg=#9017a4,bg=transparent]▓▒░{tabs}"
-                format_right "#[fg=#9017a4,bg=transparent]░▒▓{datetime}#[fg=#9017a4,bg=transparent]▓▒░"
+                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#ffffff,bg=#008ec4,bold]Tabs #[fg=#008ec4,bg=transparent]▓▒░{tabs}"
+                format_right "#[fg=#008ec4,bg=transparent]░▒▓{datetime}#[fg=#008ec4,bg=transparent]▓▒░"
                 format_space "#[bg=transparent]"
 
                 hide_frame_for_single_pane "true"
 
-                mode_normal  "#[fg=#9017a4,bg=transparent]░▒▓#[bg=#9017a4,fg=#FFFFFF]"
-                mode_pane  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Pane 󱓊 "
-                mode_tab  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Tab  "
-                mode_resize  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Resize Pane   "
-                mode_renametab  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Rename Tab   "
-                mode_rename  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Rename Pane  󱐪 "
-                mode_session  "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] Rename Tab  󱇝 "
+                mode_normal  "#[fg=#008ec4,bg=transparent]░▒▓#[bg=#008ec4,fg=#FFFFFF]"
+                mode_pane  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Pane 󱓊 "
+                mode_tab  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Tab  "
+                mode_resize  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Resize Pane   "
+                mode_renametab  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Rename Tab   "
+                mode_rename  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Rename Pane  󱐪 "
+                mode_session  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Rename Tab  󱇝 "
 
                 tab_normal              "#[bg=transparent,fg=#4C4C59]░▒▓#[fg=#000000,bg=#4C4C59] {index}  {name} #[fg=#4C4C59,bg=transparent]▓▒░"
                 tab_normal_fullscreen   "#[fg=#000000,bg=#4C4C59] {index} {name} [] "
                 tab_normal_sync         "#[fg=#000000,bg=#4C4C59] {index} {name} <> "
-                tab_active              "#[fg=#9017a4,bg=transparent]░▒▓#[fg=#ffffff,bg=#9017a4,bold,italic] {index}  {name} #[fg=#9017a4,bg=transparent]▓▒░"
+                tab_active              "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] {index}  {name} #[fg=#008ec4,bg=transparent]▓▒░"
                 tab_active_fullscreen   "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} [] "
                 tab_active_sync         "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} <> "
 
 
-                datetime          "#[fg=#ffffff,bg=#9017a4,bold] {format} "
+                datetime          "#[fg=#ffffff,bg=#008ec4,bold] {format} "
                 datetime_format   "%A, %d %b %Y %H:%M"
                 datetime_timezone "America/Chicago"
         }
