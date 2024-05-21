@@ -111,7 +111,7 @@ local config = {
 	-- https://github.com/wez/wezterm/issues/1772
 	-- https://github.com/wez/wezterm/issues/5103
 	-- enable_wayland = false,
-	color_scheme = "Sandcastle (base16)",
+	color_scheme = "'Sea Shells (Gogh)",
 	color_scheme_dirs = { os.getenv("HOME") .. "/.config/wezterm/colors/" },
 	hide_tab_bar_if_only_one_tab = true,
 	adjust_window_size_when_changing_font_size = false,
