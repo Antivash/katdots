@@ -30,7 +30,7 @@ layout {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
                 format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#080808,bg=#627a92,bold]󰋜   #[fg=#627a92,bg=transparent]▓▒░#[fg=#585858,bg=transparent]─┤"
                 format_center "{tabs}"
-                format_right "{command_day}#[fg=#212121,bg=transparent]#[fg=#585858,bg=transparent] ├─░▒▓{datetime}#[fg=#212121,bg=transparent]▓▒░"
+                format_right "#[fg=#585858,bg=transparent] ├─░▒▓#[fg=#b2a191,bg=#585858]{command_day}#[bg=#bf7a29,fg=#585858]{datetime}#[fg=#212121,bg=transparent]▓▒░"
                 format_space "#[bg=transparent,fg=#585858]·"
 
                 hide_frame_for_single_pane "true"
@@ -48,15 +48,15 @@ layout {
                 tab_active_sync         "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} <> "
 
 
-                datetime          "#[fg=#ffffff,bg=#212121,bold] {format} "
-                datetime_format   "%A, %d %b %Y %H:%M"
+                datetime          "#[fg=#080808,bg=#bf7a29,bold] {format} "
+                datetime_format   "%d %b %Y %H:%M"
                 datetime_timezone "America/Chicago"
 
                 // the command that should be executed
                 command_day_command  "bash -c \"date +%A\""
                 
                 // themeing and format of the command
-                command_day_format   "#[fg=#585858,bg=transparent] ├─░▒▓#[fg=#b2a191,bg=#585858] {exit_code} {stdout} {stderr}"
+                command_day_format   "{stdout} {stderr}"
                 
                 // interval in seconds, between two command runs
                 command_day_interval "1"
