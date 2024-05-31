@@ -4,7 +4,7 @@ layout {
     floating_panes { // will start hidden
         pane name="Lama" width="33%" height="100%" x=0 y=0
         pane name="Ofelia" width="33%" height="100%" x="33%" y=0
-        pane name="Index" width="33%" height="190%" x="100%" y=0
+        pane name="Index" width="33%" height="100%" x="100%" y=0
     }
     }
     tab name="Chat" hide_floating_panes=true split_direction="vertical" {
