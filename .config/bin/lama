@@ -4,7 +4,7 @@
 VENV_PATH="/home/ai/lama"
 
 # Command to run
-COMMAND='lama-cleaner'
+COMMAND="lama-cleaner --input /mnt/d/aiart/workdir/set --output-dir /mnt/d/aiart/workdir/cleaned --model-dir /mnt/j/StabilityMatrix/Data/Models/lama --enable-xformers --enable-interactive-seg --interactive-seg-model=vit_h  --interactive-seg-device=cuda --enable-gfpgan --gfpgan-device cuda --enable-realesrgan --realesrgan-model RealESRGAN_x4plus --realesrgan-device cuda --enable-remove-bg --enable-restoreformer --restoreformer-device cuda --enable-anime-seg"
 
 # Function to check if virtual environment is active
 is_venv_active() {
