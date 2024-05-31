@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path to the virtual environment
-VENV_PATH="/home/anaconda/envs/lama"
+VENV_PATH="/home/ai/lama"
 
 # Command to run
 COMMAND='echo "ENV Active!"'
@@ -17,8 +17,7 @@ is_venv_active() {
 
 # Activate virtual environment if not active
 if ! is_venv_active; then
-    conda init
-    /home/anaconda/bin/conda activate lama
+    source /home/ai/lama/bin/source
     
 fi
 
