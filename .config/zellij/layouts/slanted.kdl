@@ -2,16 +2,16 @@ layout {
     tab name="Art" hide_floating_panes=true {
     pane name="Forge"
     floating_panes { // will start hidden
-        pane name="Lama" width="33%" height="50%" x=0 y=0
+        pane name="Lama" width="33%" height="100%" x=0 y=0
         pane name="Ofelia" width="33%" height="100%" x="33%" y=0
-        pane name="Index" width="33%" height="50%" x="100%" y=0
+        pane name="Index" width="33%" height="190%" x="100%" y=0
     }
     }
     tab name="Chat" hide_floating_panes=true split_direction="vertical" {
     pane name="Textui" 
     pane name="SillyTavern"
     floating_panes { // will start hidden
-        pane name="SillyTavern Extras" width="100%" height="50%" x=0 y="60%"
+        pane name="SillyTavern Extras" width="50%" height="100%" x=0 y="60%"
     }
     }
     tab name="Arch" {
@@ -28,7 +28,7 @@ layout {
     children
         pane size=1 borderless=true {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
-                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#ffffff,bg=#008ec4,bold]Tabs #[fg=#008ec4,bg=transparent]▓▒░{tabs}"
+                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#ffffff,bg=#008ec4,bold]󰋜 #[fg=#008ec4,bg=transparent]▓▒░{tabs}"
                 format_right "#[fg=#212121,bg=transparent]░▒▓{datetime}#[fg=#212121,bg=transparent]▓▒░"
                 format_space "#[bg=transparent]"
 
@@ -42,9 +42,9 @@ layout {
                 mode_rename  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Rename Pane  󱐪 "
                 mode_session  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Rename Tab  󱇝 "
 
-                tab_normal              "#[bg=transparent,fg=#4C4C59]░▒▓#[fg=#000000,bg=#4C4C59] {index}  {name} #[fg=#4C4C59,bg=transparent]▓▒░"
-                tab_normal_fullscreen   "#[fg=#000000,bg=#4C4C59] {index} {name} [] "
-                tab_normal_sync         "#[fg=#000000,bg=#4C4C59] {index} {name} <> "
+                tab_normal              "#[bg=transparent,fg=#212121]░▒▓#[fg=#ffffff,bg=#212121] {index}  {name} #[fg=#212121,bg=transparent]▓▒░"
+                tab_normal_fullscreen   "#[fg=#000000,bg=#212121] {index} {name} [] "
+                tab_normal_sync         "#[fg=#000000,bg=#212121] {index} {name} <> "
                 tab_active              "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] {index}  {name} #[fg=#008ec4,bg=transparent]▓▒░"
                 tab_active_fullscreen   "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} [] "
                 tab_active_sync         "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} <> "

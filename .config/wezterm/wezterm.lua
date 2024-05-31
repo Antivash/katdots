@@ -80,8 +80,8 @@ local config = {
   window_decorations = "TITLE|RESIZE",
 	-- font = wezterm.font("Cica"),
 	-- font_size = 10.0,
-	font = wezterm.font("Monoid Nerd Font Mono"),
-	font_size = 12,
+	font = wezterm.font("CaskaydiaCove Nerd Font"),
+	font_size = 13,
 	-- cell_width = 1.1,
 	-- line_height = 1.1,
 	-- font_rules = {
@@ -111,7 +111,7 @@ local config = {
 	-- https://github.com/wez/wezterm/issues/1772
 	-- https://github.com/wez/wezterm/issues/5103
 	-- enable_wayland = false,
-	color_scheme = "Pencil Dark (Gogh)",
+	color_scheme = "Mashup Colors (terminal.sexy)",
 	color_scheme_dirs = { os.getenv("HOME") .. "/.config/wezterm/colors/" },
 	hide_tab_bar_if_only_one_tab = true,
 	adjust_window_size_when_changing_font_size = false,
