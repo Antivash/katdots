@@ -28,9 +28,9 @@ layout {
     children
         pane size=1 borderless=true {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
-                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#ffffff,bg=#627a92,bold]󰋜 #[fg=#627a92,bg=transparent]▓▒░"
-                format_center "{tabs}"
-                format_right "#[fg=#212121,bg=transparent]░▒▓{datetime}#[fg=#212121,bg=transparent]▓▒░"
+                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#ffffff,bg=#627a92,bold]󰋜   #[fg=#627a92,bg=transparent]▓▒░"
+                format_center "#[fg=#585858,bg=transparent] ├─ {tabs} #[fg=#585858,bg=transparent]─┤"
+                format_right "#[fg=#212121,bg=transparent]#[fg=#585858,bg=transparent] ├─░▒▓{datetime}#[fg=#212121,bg=transparent]▓▒░#[fg=#585858,bg=transparent]─┤"
                 format_space "#[bg=transparent,fg=#585858]·"
 
                 hide_frame_for_single_pane "true"
@@ -40,7 +40,7 @@ layout {
                 mode_tab  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Tab  "
                 mode_resize  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Resize Pane   "
 
-                tab_normal              "#[bg=transparent,fg=#212121]░▒▓#[fg=#ffffff,bg=#212121] {index}  {name} #[fg=#212121,bg=transparent]▓▒░"
+                tab_normal              "#[bg=transparent,fg=#212121]░▒▓#[fg=#ffffff,bg=#212121] {index} #[bg=#b2a191,fg=#080808]╱ {name} #[fg=#b2a191,bg=transparent]▓▒░"
                 tab_normal_fullscreen   "#[fg=#000000,bg=#212121] {index} {name} [] "
                 tab_normal_sync         "#[fg=#000000,bg=#212121] {index} {name} <> "
                 tab_active              "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic] {index} #[bg=#627a92,fg=#b2a191] #[fg=#080808,bg=#627a92]{name} #[fg=#627a92,bg=transparent]▓▒░"
