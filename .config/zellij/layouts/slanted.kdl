@@ -28,22 +28,32 @@ layout {
     children
         pane size=1 borderless=true {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
-                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#080808,bg=#627a92,bold]󰋜   #[fg=#627a92,bg=transparent]▓▒░#[fg=#212121,bg=transparent]─┤"
+                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#080808,bg=#627a92,bold]󰋜 {command_uname}   #[fg=#627a92,bg=transparent]▓▒░#[fg=#212121,bg=transparent]─┤"
                 format_center "{tabs}"
                 format_right "#[fg=#212121,bg=transparent] ├─░▒▓#[fg=#b2a191,bg=#212121]{command_day}#[bg=#bf7a29,fg=#212121]{datetime}#[bg=#b2a191,fg=#bf7a29]#[bg=#b2a191,fg=#080808]{command_time}#[fg=#b2a191,bg=transparent]▓▒░"
                 format_space "#[bg=transparent,fg=#ffffff]·"
 
                 hide_frame_for_single_pane "false"
 
-                mode_normal  "#[fg=#b2a191,bg=transparent]░▒▓#[bg=#b2a191,fg=#080808]󰣇 󰺟 #[bg=#627a92,fg=#b2a191] "
-                mode_pane  "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Pane 󱃙 #[bg=#627a92,fg=#b2a191]"
-                mode_tab  "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Tab 󱃙#[bg=#627a92,fg=#b2a191]"
-                mode_resize  "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Resize Pane 󱃙 #[bg=#627a92,fg=#b2a191]"
+                mode_normal  "#[fg=#b2a191,bg=transparent]░▒▓#[bg=#b2a191,fg=#080808]󰣇  #[bg=#627a92,fg=#b2a191] "
+                mode_pane  "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Pane  #[bg=#627a92,fg=#b2a191]"
+                mode_tab  "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Tab #[bg=#627a92,fg=#b2a191]"
+                mode_resize  "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Resize Pane  #[bg=#627a92,fg=#b2a191]"
+                mode_locked        "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Locked #[bg=#627a92,fg=#b2a191]"
+                mode_scroll        "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Scroll #[bg=#627a92,fg=#b2a191]"
+                mode_enter_search  "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Enter Search #[bg=#627a92,fg=#b2a191]"
+                mode_search        "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Search #[bg=#627a92,fg=#b2a191]"
+                mode_rename_tab    "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Rename Tab #[bg=#627a92,fg=#b2a191]"
+                mode_rename_pane   "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Rename Pane #[bg=#627a92,fg=#b2a191]"
+                mode_session       "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Session #[bg=#627a92,fg=#b2a191]"
+                mode_move          "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Move #[bg=#627a92,fg=#b2a191]"
+                mode_prompt        "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Prompt #[bg=#627a92,fg=#b2a191]"
+                mode_tmux          "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Tmux #[bg=#627a92,fg=#b2a191]"
 
                 tab_normal              "#[bg=transparent,fg=#b2a191]░▒▓#[fg=#080808,bg=#b2a191] {index} #[bg=#b2a191,fg=#080808]╱ {name} #[fg=#b2a191,bg=transparent]▓▒░"
                 tab_normal_fullscreen   "#[fg=#000000,bg=#212121] {index} {name} [] "
                 tab_normal_sync         "#[fg=#000000,bg=#212121] {index} {name} <> "
-                tab_active              "#[fg=#627a92,bg=transparent]░▒▓#[fg=#080808,bg=#627a92,bold,italic] {index} #[bg=#627a92,fg=#b2a191] #[fg=#080808,bg=#627a92]{name} #[fg=#627a92,bg=transparent]▓▒░"
+                tab_active              "#[fg=#627a92,bg=transparent]░▒▓#[fg=#080808,bg=#627a92,bold,italic] {index} ╱ {name} #[fg=#627a92,bg=transparent]▓▒░"
                 tab_active_fullscreen   "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} [] "
                 tab_active_sync         "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} <> "
 
@@ -93,6 +103,27 @@ layout {
                 // "raw"     :: do not apply any formatting. This can be used to properly render
                 //              ansi escape sequences from the command output.
                 command_time_rendermode "static"
+
+                // the command that should be executed
+                command_uname_command  "bash -c \"echo $(echo $USER | sed 's/.*/\L&/; s/^./\U&/')\""
+                
+                // themeing and format of the command
+                command_uname_format   "{stdout} {stderr}"
+                
+                // interval in seconds, between two command runs
+                command_uname_interval "1"
+                
+                // render mode of the command. ["static", "dynamic", "raw"]
+                //
+                // "static"  :: format the command with the given format from the config and don't
+                //              consider any other formatting directives
+                // "dynamic" :: format the command based on the command output. When the command
+                //              output contains formatting strings for zjstatus, zjstatus will
+                //              try to render them. This might lead to unexpected behavior, in case
+                //              the formatting is not correct.
+                // "raw"     :: do not apply any formatting. This can be used to properly render
+                //              ansi escape sequences from the command output.
+                command_uname_rendermode "static"
         }
     }
 }
