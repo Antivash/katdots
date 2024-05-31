@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Array of hex colors
-colors=("202020" "bf3f34" "707d22" "bf7a29" "627a92" "75507b" "757978" "b2a191" "404040" "ff6c5f" "b8ca4b" "c7a551" "95b9de" "ad7fa8" "9fa590" "e8d0c3")
+colors=("403d52" "e0def4" "eb6f92" "31748f" "9ccfd8" "f6c177" "c4a7e7" "fe640b" "ebbcba" "26233a" "e0def4" "202020" "bf3f34" "707d22" "bf7a29" "627a92" "75507b" "757978" "b2a191" "404040" "ff6c5f" "b8ca4b" "c7a551" "95b9de" "ad7fa8" "9fa590" "e8d0c3")
 
 for hex in "${colors[@]}"; do
     # Convert hex to RGB
