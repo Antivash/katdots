@@ -105,7 +105,7 @@ layout {
                 command_time_rendermode "static"
 
                 // the command that should be executed
-                command_uname_command  "bash -c \"echo $(echo $USER | sed 's/.*/\L&/; s/^./\U&/')\""
+                command_uname_command  "bash -c \"echo $(echo $USER | sed 's/.*/\\L&/; s/^./\\U&/')\""
                 
                 // themeing and format of the command
                 command_uname_format   "{stdout} {stderr}"
