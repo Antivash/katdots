@@ -28,19 +28,16 @@ layout {
     children
         pane size=1 borderless=true {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
-                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#ffffff,bg=#008ec4,bold]󰋜 #[fg=#008ec4,bg=transparent]▓▒░{tabs}"
+                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#ffffff,bg=#627a92,bold]󰋜 #[fg=#627a92,bg=transparent]▓▒░{tabs}"
                 format_right "#[fg=#212121,bg=transparent]░▒▓{datetime}#[fg=#212121,bg=transparent]▓▒░"
                 format_space "#[bg=transparent]"
 
                 hide_frame_for_single_pane "true"
 
-                mode_normal  "#[fg=#ffffff,bg=transparent]├─░▒▓#[bg=#ffffff,fg=#080808]󰣇"
+                mode_normal  "#[fg=#585858,bg=transparent] ├─#[fg=#b2a191,bg=transparent]░▒▓#[bg=#ffffff,fg=#080808]󰣇#[bg=#627a92,fg=#b2a191] "
                 mode_pane  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Pane 󱓊 "
                 mode_tab  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Tab  "
                 mode_resize  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Resize Pane   "
-                mode_renametab  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Rename Tab   "
-                mode_rename  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Rename Pane  󱐪 "
-                mode_session  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Rename Tab  󱇝 "
 
                 tab_normal              "#[bg=transparent,fg=#212121]░▒▓#[fg=#ffffff,bg=#212121] {index}  {name} #[fg=#212121,bg=transparent]▓▒░"
                 tab_normal_fullscreen   "#[fg=#000000,bg=#212121] {index} {name} [] "
