@@ -198,6 +198,20 @@ themes {
 		black "#26233a"
 		white "#e0def4"
 	}
+
+	mashup {
+		bg "#202020"
+		fg "#b2a191"
+		red "#bf3f34"
+		green "#627a92"
+		blue "#707d22"
+		yellow "#bf7a29"
+		magenta "#75507b"
+		orange "#c7a551"
+		cyan "#95b9de"
+		black "#404040"
+		white "#b2a191"
+	}
     gruvbox-dark {
  		fg "#D5C4A1"
  		bg "#282828"
@@ -229,7 +243,7 @@ themes {
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "tokyo-night"
+theme "mashup"
 
 // The name of the default layout to load on startup
 // Default: "default"
