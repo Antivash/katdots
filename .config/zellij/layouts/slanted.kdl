@@ -43,7 +43,7 @@ layout {
                 tab_normal              "#[bg=transparent,fg=#212121]░▒▓#[fg=#ffffff,bg=#212121] {index}  {name} #[fg=#212121,bg=transparent]▓▒░"
                 tab_normal_fullscreen   "#[fg=#000000,bg=#212121] {index} {name} [] "
                 tab_normal_sync         "#[fg=#000000,bg=#212121] {index} {name} <> "
-                tab_active              "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] {index}  {name} #[fg=#008ec4,bg=transparent]▓▒░"
+                tab_active              "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] {index} #[bg=#627a92,fg=#b2a191] {name} #[fg=#008ec4,bg=transparent]▓▒░"
                 tab_active_fullscreen   "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} [] "
                 tab_active_sync         "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} <> "
 
