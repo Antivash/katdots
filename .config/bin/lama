@@ -17,6 +17,7 @@ is_venv_active() {
 
 # Activate virtual environment if not active
 if ! is_venv_active; then
+    conda init
     /home/anaconda/bin/conda activate lama
     
 fi
