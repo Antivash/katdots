@@ -35,15 +35,15 @@ layout {
 
                 hide_frame_for_single_pane "false"
 
-                mode_normal  "#[fg=#b2a191,bg=transparent]░▒▓#[bg=#b2a191,fg=#080808]󰣇 #[bg=#627a92,fg=#b2a191]"
-                mode_pane  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Pane 󱓊 "
-                mode_tab  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Tab  "
-                mode_resize  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Resize Pane   "
+                mode_normal  "#[fg=#b2a191,bg=transparent]░▒▓#[bg=#b2a191,fg=#080808]󰣇 󰺟 #[bg=#627a92,fg=#b2a191] "
+                mode_pane  "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Pane 󱃙 #[bg=#627a92,fg=#b2a191]"
+                mode_tab  "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Tab 󱃙#[bg=#627a92,fg=#b2a191]"
+                mode_resize  "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic]󰣇 Resize Pane 󱃙 #[bg=#627a92,fg=#b2a191]"
 
                 tab_normal              "#[bg=transparent,fg=#b2a191]░▒▓#[fg=#080808,bg=#b2a191] {index} #[bg=#b2a191,fg=#080808]╱ {name} #[fg=#b2a191,bg=transparent]▓▒░"
                 tab_normal_fullscreen   "#[fg=#000000,bg=#212121] {index} {name} [] "
                 tab_normal_sync         "#[fg=#000000,bg=#212121] {index} {name} <> "
-                tab_active              "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic] {index} #[bg=#627a92,fg=#b2a191] #[fg=#080808,bg=#627a92]{name} #[fg=#627a92,bg=transparent]▓▒░"
+                tab_active              "#[fg=#627a92,bg=transparent]░▒▓#[fg=#080808,bg=#627a92,bold,italic] {index} #[bg=#627a92,fg=#b2a191] #[fg=#080808,bg=#627a92]{name} #[fg=#627a92,bg=transparent]▓▒░"
                 tab_active_fullscreen   "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} [] "
                 tab_active_sync         "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} <> "
 
