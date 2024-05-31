@@ -28,10 +28,10 @@ layout {
     children
         pane size=1 borderless=true {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
-                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#080808,bg=#627a92,bold]󰋜   #[fg=#627a92,bg=transparent]▓▒░#[fg=#585858,bg=transparent]─┤"
+                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#080808,bg=#627a92,bold]󰋜   #[fg=#627a92,bg=transparent]▓▒░#[fg=#212121,bg=transparent]─┤"
                 format_center "{tabs}"
-                format_right "#[fg=#585858,bg=transparent] ├─░▒▓#[fg=#b2a191,bg=#585858]{command_day}#[bg=#bf7a29,fg=#585858]{datetime}#[fg=#212121,bg=transparent]▓▒░"
-                format_space "#[bg=transparent,fg=#585858]·"
+                format_right "#[fg=#212121,bg=transparent] ├─░▒▓#[fg=#b2a191,bg=#212121]{command_day}#[bg=#bf7a29,fg=#212121]{datetime}#[bg=#b2a191,fg=#bf7a29]{command_time}#[fg=#212121,bg=transparent]▓▒░"
+                format_space "#[bg=transparent,fg=#ffffff]·"
 
                 hide_frame_for_single_pane "true"
 
@@ -49,7 +49,7 @@ layout {
 
 
                 datetime          "#[fg=#080808,bg=#bf7a29,bold] {format} "
-                datetime_format   "%d %b %Y %H:%M"
+                datetime_format   "%d %b %Y"
                 datetime_timezone "America/Chicago"
 
                 // the command that should be executed
@@ -72,6 +72,27 @@ layout {
                 // "raw"     :: do not apply any formatting. This can be used to properly render
                 //              ansi escape sequences from the command output.
                 command_day_rendermode "static"
+
+                // the command that should be executed
+                command_time_command  "bash -c \"date +%X\""
+                
+                // themeing and format of the command
+                command_time_format   "{stdout} {stderr}"
+                
+                // interval in seconds, between two command runs
+                command_time_interval "1"
+                
+                // render mode of the command. ["static", "dynamic", "raw"]
+                //
+                // "static"  :: format the command with the given format from the config and don't
+                //              consider any other formatting directives
+                // "dynamic" :: format the command based on the command output. When the command
+                //              output contains formatting strings for zjstatus, zjstatus will
+                //              try to render them. This might lead to unexpected behavior, in case
+                //              the formatting is not correct.
+                // "raw"     :: do not apply any formatting. This can be used to properly render
+                //              ansi escape sequences from the command output.
+                command_time_rendermode "static"
         }
     }
 }
