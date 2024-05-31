@@ -34,7 +34,7 @@ layout {
 
                 hide_frame_for_single_pane "true"
 
-                mode_normal  "#[fg=#008ec4,bg=transparent]░▒▓#[bg=#008ec4,fg=#FFFFFF]"
+                mode_normal  "#[fg=#ffffff,bg=transparent]├─░▒▓#[bg=#ffffff,fg=#080808]󰣇"
                 mode_pane  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Pane 󱓊 "
                 mode_tab  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Tab  "
                 mode_resize  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Resize Pane   "
