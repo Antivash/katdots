@@ -28,9 +28,10 @@ layout {
     children
         pane size=1 borderless=true {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
-                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#ffffff,bg=#627a92,bold]󰋜 #[fg=#627a92,bg=transparent]▓▒░{tabs}"
+                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#ffffff,bg=#627a92,bold]󰋜 #[fg=#627a92,bg=transparent]▓▒░"
+                format_center "{tabs}"
                 format_right "#[fg=#212121,bg=transparent]░▒▓{datetime}#[fg=#212121,bg=transparent]▓▒░"
-                format_space "#[bg=transparent]"
+                format_space "#[bg=transparent,fg=#585858]·"
 
                 hide_frame_for_single_pane "true"
 
