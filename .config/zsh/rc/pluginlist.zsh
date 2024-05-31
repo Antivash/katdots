@@ -221,11 +221,11 @@ zinit wait'1' lucid \
 
 # zinit wait'0' lucid \
 	#   light-mode for @t413/zsh-background-notify
-if [[ -z "$SSH_CONNECTION" ]]; then
-	zinit wait'0' lucid \
-		atload"source $ZHOMEDIR/rc/pluginconfig/zsh-auto-notify_atload.zsh" \
-		light-mode for @MichaelAquilina/zsh-auto-notify
-fi
+#if [[ -z "$SSH_CONNECTION" ]]; then
+#	zinit wait'0' lucid \
+#		atload"source $ZHOMEDIR/rc/pluginconfig/zsh-auto-notify_atload.zsh" \
+#		light-mode for @MichaelAquilina/zsh-auto-notify
+#fi
 
 zinit wait'0' lucid \
 	light-mode for @mafredri/zsh-async

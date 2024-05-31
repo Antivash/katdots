@@ -4,7 +4,7 @@
 VENV_PATH="/home/ai/lama"
 
 # Command to run
-COMMAND='echo "ENV Active!"'
+COMMAND='lama-cleaner'
 
 # Function to check if virtual environment is active
 is_venv_active() {
