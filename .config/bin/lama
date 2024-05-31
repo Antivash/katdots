@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Path to the virtual environment
+VENV_PATH="/home/anaconda/envs/lama"
+
+# Command to run
+COMMAND='echo "ENV Active!"'
+
+# Function to check if virtual environment is active
+is_venv_active() {
+    if [[ -z "$VIRTUAL_ENV" ]]; then
+        return 1
+    else
+        return 0
+    fi
+}
+
+# Activate virtual environment if not active
+if ! is_venv_active; then
+    echo "No Venv..."
+    
+fi
+
+# Run the command
+echo "Running command: $COMMAND"
+$COMMAND
