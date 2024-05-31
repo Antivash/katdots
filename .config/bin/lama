@@ -17,10 +17,9 @@ is_venv_active() {
 
 # Activate virtual environment if not active
 if ! is_venv_active; then
-    echo "No Venv..."
+    conda activate lama
     
 fi
 
 # Run the command
-echo "Running command: $COMMAND"
 $COMMAND
