@@ -28,19 +28,19 @@ layout {
     children
         pane size=1 borderless=true {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
-                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#ffffff,bg=#627a92,bold]󰋜   #[fg=#627a92,bg=transparent]▓▒░"
-                format_center "#[fg=#585858,bg=transparent] ├─ {tabs} #[fg=#585858,bg=transparent]─┤"
-                format_right "#[fg=#212121,bg=transparent]#[fg=#585858,bg=transparent] ├─░▒▓{datetime}#[fg=#212121,bg=transparent]▓▒░#[fg=#585858,bg=transparent]─┤"
+                format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#080808,bg=#627a92,bold]󰋜   #[fg=#627a92,bg=transparent]▓▒░#[fg=#585858,bg=transparent]─┤"
+                format_center "{tabs}"
+                format_right "{command_day}#[fg=#212121,bg=transparent]#[fg=#585858,bg=transparent] ├─░▒▓{datetime}#[fg=#212121,bg=transparent]▓▒░"
                 format_space "#[bg=transparent,fg=#585858]·"
 
                 hide_frame_for_single_pane "true"
 
-                mode_normal  "#[fg=#585858,bg=transparent] ├─#[fg=#b2a191,bg=transparent]░▒▓#[bg=#b2a191,fg=#080808]󰣇 #[bg=#627a92,fg=#b2a191]"
+                mode_normal  "#[fg=#b2a191,bg=transparent]░▒▓#[bg=#b2a191,fg=#080808]󰣇 #[bg=#627a92,fg=#b2a191]"
                 mode_pane  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Pane 󱓊 "
                 mode_tab  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Tab  "
                 mode_resize  "#[fg=#008ec4,bg=transparent]░▒▓#[fg=#ffffff,bg=#008ec4,bold,italic] Resize Pane   "
 
-                tab_normal              "#[bg=transparent,fg=#212121]░▒▓#[fg=#ffffff,bg=#212121] {index} #[bg=#b2a191,fg=#080808]╱ {name} #[fg=#b2a191,bg=transparent]▓▒░"
+                tab_normal              "#[bg=transparent,fg=#b2a191]░▒▓#[fg=#080808,bg=#b2a191] {index} #[bg=#b2a191,fg=#080808]╱ {name} #[fg=#b2a191,bg=transparent]▓▒░"
                 tab_normal_fullscreen   "#[fg=#000000,bg=#212121] {index} {name} [] "
                 tab_normal_sync         "#[fg=#000000,bg=#212121] {index} {name} <> "
                 tab_active              "#[fg=#b2a191,bg=transparent]░▒▓#[fg=#080808,bg=#b2a191,bold,italic] {index} #[bg=#627a92,fg=#b2a191] #[fg=#080808,bg=#627a92]{name} #[fg=#627a92,bg=transparent]▓▒░"
@@ -51,6 +51,27 @@ layout {
                 datetime          "#[fg=#ffffff,bg=#212121,bold] {format} "
                 datetime_format   "%A, %d %b %Y %H:%M"
                 datetime_timezone "America/Chicago"
+
+                // the command that should be executed
+                command_day_command  "bash -c \"date +%A\""
+                
+                // themeing and format of the command
+                command_day_format   "#[fg=#585858,bg=transparent] ├─░▒▓#[fg=#b2a191,bg=#585858] {exit_code} {stdout} {stderr}"
+                
+                // interval in seconds, between two command runs
+                command_day_interval "1"
+                
+                // render mode of the command. ["static", "dynamic", "raw"]
+                //
+                // "static"  :: format the command with the given format from the config and don't
+                //              consider any other formatting directives
+                // "dynamic" :: format the command based on the command output. When the command
+                //              output contains formatting strings for zjstatus, zjstatus will
+                //              try to render them. This might lead to unexpected behavior, in case
+                //              the formatting is not correct.
+                // "raw"     :: do not apply any formatting. This can be used to properly render
+                //              ansi escape sequences from the command output.
+                command_day_rendermode "static"
         }
     }
 }
