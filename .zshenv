@@ -126,7 +126,8 @@ roottext=lightgrey,black
 export DOCKER_HOST='$XDG_RUNTIME_DIR/podman/podman.sock'
 
 #--------------------------------------------------------------#
-##                  WSL GUI Stuff                             ##
+##                  WSL Stuff                                 ##
 #--------------------------------------------------------------#
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
 export LIBGL_ALWAYS_INDIRECT=1
+export ADB_SERVER_SOCKET=tcp:$(cat /etc/resolv.conf | awk '/nameserver/ {print $2}'):5037
