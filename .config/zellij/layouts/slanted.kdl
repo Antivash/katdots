@@ -22,6 +22,9 @@ layout {
     }
     tab name="Windows" {
     pane
+    floating_panes { // will start hidden
+        pane name="ADB" width="50%" height="100%" x=0 y="60%"
+    }
     }
 
     default_tab_template {
