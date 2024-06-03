@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Check if the folder is provided
+if [ -z "$1" ]; then
+  echo "Usage: $0 <folder>"
+  exit 1
+fi
+
+FOLDER=$1
+
+# Check if the folder exists
+if [ ! -d "$FOLDER" ]; then
+  echo "The folder $FOLDER does not exist."
+  exit 1
+fi
+
+# Convert each PNG file to JPG
+for file in "$FOLDER"/*.png; do
+  # Check if there are any PNG files
+  if [ ! -e "$file" ]; then
+    echo "No PNG files found in $FOLDER"
+    exit 1
+  fi
+
+  # Get the base name of the file without the extension
+  base_name=$(basename "$file" .png)
+  # Convert the file to JPG
+  convert "$file" "$FOLDER/$base_name.jpg"
+  echo "Converted $file to $FOLDER/$base_name.jpg"
+done
+
+echo "Conversion complete."
