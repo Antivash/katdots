@@ -53,7 +53,8 @@ zinit wait'0b' lucid as"completion" \
 	light-mode for @zsh-users/zsh-completions
 
 zinit wait'0b' lucid \
-	atload"source $ZHOMEDIR/rc/pluginconfig/manai.zsh" 
+	atload"source $ZHOMEDIR/rc/pluginconfig/manai.zsh" \
+	light-mode for @mecab/manai 
 #--------------------------------#
 # prompt
 #--------------------------------#
