@@ -52,7 +52,8 @@ zinit wait'0b' lucid as"completion" \
 	atload"source $ZHOMEDIR/rc/pluginconfig/zsh-completions_atload.zsh; zicompinit; zicdreplay" \
 	light-mode for @zsh-users/zsh-completions
 
-
+zinit wait'0b' lucid \
+	atload"source $ZHOMEDIR/rc/pluginconfig/manai.zsh" 
 #--------------------------------#
 # prompt
 #--------------------------------#
