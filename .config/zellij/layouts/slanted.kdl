@@ -31,14 +31,14 @@ layout {
     children
         pane size=1 borderless=true {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
-                format_left  "#[fg=#212121,bg=#212121,bold]{mode}#[fg=#bf7a29,bg=#212121,bold]󰋜 {command_uname}   #[fg=#bf7a29,bg=transparent]▓▒░#[fg=#212121,bg=transparent]─┤"
+                format_left  "#[fg=#212121,bg=#212121,bold]{mode}#[fg=#212121,bg=#bf7a29,bold]󰋜 {command_uname}   #[fg=#bf7a29,bg=transparent]▓▒░#[fg=#212121,bg=transparent]─┤"
                 format_center "{tabs}"
                 format_right "#[fg=#212121,bg=transparent] ├─░▒▓#[fg=#b2a191,bg=#212121]{command_day}#[bg=#bf7a29,fg=#212121]{datetime}#[bg=#212121,fg=#bf7a29]#[fg=#b2a191,bg=#212121]{command_time}#[fg=#212121,bg=transparent]▓▒░"
                 format_space "#[bg=transparent,fg=transparent]·"
 
                 hide_frame_for_single_pane "false"
 
-                mode_normal  "#[fg=#212121,bg=transparent]░▒▓#[bg=#212121,fg=#b2a191]󰣇  #[bg=#212121,fg=#b2a191] "
+                mode_normal  "#[fg=#212121,bg=transparent]░▒▓#[bg=#212121,fg=#b2a191]󰣇  #[bg=#bf7a29,fg=#212121] "
                 mode_pane  "#[fg=#212121,bg=transparent]░▒▓#[bg=#212121,fg=#b2a191,bold,italic]󰣇 Pane  #[bg=#bf7a29,fg=#212121]"
                 mode_tab  "#[fg=#212121,bg=transparent]░▒▓#[bg=#212121,fg=#b2a191,bold,italic]󰣇 Tab #[bg=#bf7a29,fg=#212121]"
                 mode_resize  "#[fg=#212121,bg=transparent]░▒▓#[bg=#212121,fg=#b2a191,bold,italic]󰣇 Resizing Pane  #[bg=#bf7a29,fg=#212121]"
