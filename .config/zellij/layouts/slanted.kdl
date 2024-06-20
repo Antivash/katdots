@@ -33,7 +33,7 @@ layout {
                 plugin location="file:/home/antivash/.config/zellij/plugins/zjstatus.wasm" {
                 format_left  "#[fg=#008ec4,bg=transparent,bold]{mode}#[fg=#080808,bg=#627a92,bold]󰋜 {command_uname}   #[fg=#627a92,bg=transparent]▓▒░#[fg=#212121,bg=transparent]─┤"
                 format_center "{tabs}"
-                format_right "#[fg=#212121,bg=transparent] ├─░▒▓#[fg=#b2a191,bg=#212121]{command_day}#[bg=#bf7a29,fg=#212121]{datetime}#[bg=#b2a191,fg=#bf7a29]#[bg=#b2a191,fg=#080808]{command_time}#[fg=#b2a191,bg=transparent]▓▒░"
+                format_right "#[fg=#212121,bg=transparent] ├─░▒▓#[fg=#b2a191,bg=#212121]{command_day}#[bg=#bf7a29,fg=#212121]{datetime}#[bg=#b2a191,fg=#bf7a29]#[fg=#b2a191,bg=#212121]{command_time}#[fg=#b2a191,bg=transparent]▓▒░"
                 format_space "#[bg=transparent,fg=#ffffff]·"
 
                 hide_frame_for_single_pane "false"
