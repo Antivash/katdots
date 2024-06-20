@@ -53,10 +53,10 @@ layout {
                 mode_prompt        "#[fg=#212121,bg=transparent]░▒▓#[bg=#212121,fg=#b2a191,bold,italic]󰣇 Prompt #[bg=#bf7a29,fg=#212121]"
                 mode_tmux          "#[fg=#212121,bg=transparent]░▒▓#[bg=#212121,fg=#b2a191,bold,italic]󰣇 Tmux #[bg=#bf7a29,fg=#212121]"
 
-                tab_normal              "#[bg=transparent,fg=#b2a191]░▒▓#[fg=#080808,bg=#b2a191] {index} #[bg=#b2a191,fg=#080808]╱ {name} #[fg=#b2a191,bg=transparent]▓▒░"
+                tab_normal              "#[bg=transparent,fg=#212121]░▒▓#[fg=#b2a191,bg=#212121] {index} #[bg=#212121,fg=#b2a191]╱ {name} #[fg=#212121,bg=transparent]▓▒░"
                 tab_normal_fullscreen   "#[fg=#000000,bg=#212121] {index} {name} [] "
                 tab_normal_sync         "#[fg=#000000,bg=#212121] {index} {name} <> "
-                tab_active              "#[fg=#627a92,bg=transparent]░▒▓#[fg=#080808,bg=#627a92,bold,italic] {index} ╱ {name} #[fg=#627a92,bg=transparent]▓▒░"
+                tab_active              "#[fg=#bf7a29,bg=transparent]░▒▓#[fg=#212121,bg=#bf7a29,bold,italic] {index} ╱ {name} #[fg=#bf7a29,bg=transparent]▓▒░"
                 tab_active_fullscreen   "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} [] "
                 tab_active_sync         "#[fg=#9399B2,bg=transparent,bold,italic] {index} {name} <> "
 
