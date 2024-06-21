@@ -17,7 +17,8 @@ layout {
     tab name="Arch" {
     pane
     floating_panes { // will start hidden
-        pane name="Star Rail Auto" command "/usr/bin/autorail" width="50%" height="100%" x=0 y="60%"
+        pane name="Star Rail Auto" command="/usr/bin/autorail" width="50%" height="100%" x=0 y="60%"
+    }
     }
     tab name="Ubuntu" {
     pane
